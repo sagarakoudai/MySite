@@ -1,0 +1,27 @@
+header {
+  background-color: #ec715f;
+  height: 70px;
+  text-align: center;
+}
+
+.header {
+  width: 1024px;
+  display: inline-flex;
+}
+
+nav {
+  margin-left: 320px;
+}
+
+.nav-list {
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav-list-item {
+  float: left;
+  margin: 0 30px;
+  font-size: 16px;
+  color: #fafafa;
+}
+
