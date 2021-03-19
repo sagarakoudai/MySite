@@ -61,7 +61,6 @@ nav {
 .portfolio {
   background-color: #eceff1;
   margin: 0;
-  padding: 90px 0;
 }
 
 .portfolio-contents {
@@ -317,4 +316,19 @@ nav {
 
 .fa-twitter-square {
   margin: 0 20px;
+}
+
+footer {
+  height: 60px;
+  background-color: #ec715f;
+}
+
+footer p {
+  height: 60px;
+  margin: 0;
+  font-size: 16px;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
