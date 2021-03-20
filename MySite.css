@@ -365,10 +365,6 @@ footer p {
     display: inline !important;
   }
 
-  .mb-br {
-    display: block;
-  }
-
   /* header */
   header {
     height: 50px;
@@ -384,7 +380,14 @@ footer p {
   }
 
   .menu {
-    max-width: 600px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .fa-bars {
+    font-size: 40px;
+    padding: 5px;
   }
 
   .menu a {
@@ -397,7 +400,6 @@ footer p {
   label {
     display: block;
     margin: 0 0 4px 0;
-    padding: 15px;
     line-height: 1;
     color: #fff;
     cursor: pointer;
@@ -426,7 +428,7 @@ footer p {
 
   #menu_bar01:checked ~ #links01 li,
   #menu_bar02:checked ~ #links02 li {
-    height: 54px;
+    height: 56px;
     opacity: 1;
   }
 
@@ -487,5 +489,33 @@ footer p {
 
   .strength3 {
     margin-bottom: 0;
+  }
+
+  /* .profile */
+  .profile-contents {
+    width: 90%;
+  }
+
+  .profile-2 {
+    flex-direction: column;
+  }
+
+  .nameskills {
+    text-align: center;
+    margin: 20px auto 0 auto;
+  }
+
+  /* .contact */
+  .contact-contents {
+    width: 90%;
+  }
+
+  .contact-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sns {
+    margin-top: 20px;
   }
 }
