@@ -1,9 +1,17 @@
-body {
+* {
   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.pc {
+  display: inline !important;
+}
+.mb {
+  display: none !important;
 }
 
 /* header */
-
 header {
   background-color: #ec715f;
   height: 70px;
@@ -15,8 +23,9 @@ header {
   display: inline-flex;
 }
 
-nav {
-  margin-left: 320px;
+.header nav {
+  line-height: 70px;
+  margin-left: auto;
 }
 
 .nav-list {
@@ -39,6 +48,7 @@ nav {
   width: 100%;
   background-image: url("img2/mv.png");
   background-size: cover;
+  background-position: center;
 }
 
 .main-visual-text {
@@ -79,9 +89,9 @@ nav {
   content: "";
   display: block;
   margin: 8px auto 0 auto;
-  width: 70px; /*下線の幅*/
-  height: 3px; /*下線の太さ*/
-  background-color: #ec715f; /*下線の色*/
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
 }
 
 .portfolio-contents p {
@@ -136,9 +146,9 @@ nav {
   content: "";
   display: block;
   margin: 8px auto 0 auto;
-  width: 70px; /*下線の幅*/
-  height: 3px; /*下線の太さ*/
-  background-color: #ec715f; /*下線の色*/
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
 }
 
 .feature-contents h2 {
@@ -197,9 +207,9 @@ nav {
   content: "";
   display: block;
   margin: 8px auto 0 auto;
-  width: 70px; /*下線の幅*/
-  height: 3px; /*下線の太さ*/
-  background-color: #ec715f; /*下線の色*/
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
 }
 
 .profile-contents h2 {
@@ -268,9 +278,9 @@ nav {
   content: "";
   display: block;
   margin: 8px auto 0 auto;
-  width: 70px; /*下線の幅*/
-  height: 3px; /*下線の太さ*/
-  background-color: #ec715f; /*下線の色*/
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
 }
 
 .contact-contents h2 {
@@ -323,7 +333,6 @@ nav {
   margin: 0 20px;
 }
 
-
 /* footer */
 footer {
   height: 60px;
@@ -338,4 +347,68 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none !important;
+  }
+
+  .mb {
+    display: inline !important;
+  }
+
+  .menu {
+    max-width: 600px;
+  }
+
+  .menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  label {
+    display: block;
+    margin: 0 0 4px 0;
+    padding: 15px;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    list-style: none;
+  }
+
+  .menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  #menu_bar01:checked ~ #links01 li,
+  #menu_bar02:checked ~ #links02 li {
+    height: 54px;
+    opacity: 1;
+  }
+
+  .main-visual {
+    height: 650px;
+    width: 100%;
+    background-image: url("img2/code.png");
+    background-size: cover;
+  }
 }
